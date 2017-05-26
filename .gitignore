@@ -2,3 +2,4 @@
 /.idea/
 *.tfvars
 *.tfstate
+*.tfstate.backup

@@ -6,7 +6,7 @@ pipeline {
             steps {
                 sh 'terraform --version'
                 dir ('simple-instance') {
-                    sh 'terraform plan'
+                    sh 'ls -al'
                 }
             }
         }
