@@ -5,9 +5,7 @@ pipeline {
         stage('Example AWS thing') {
             steps {
                 sh 'terraform --version'
-                dir ('simple-instance') {
-                    sh 'ls -al'
-                }
+                sh 'cd simple-instance;terraform plan'
             }
         }
     }
